@@ -1,0 +1,82 @@
+/* Color Palette & Font Setup */
+body {
+    background-color: #fbf9f4; /* Warm Substack Beige */
+    color: #292929; /* Off-black for editorial readability */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Layout Container */
+.container {
+    max-width: 650px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+/* Main Burgundy Headline */
+h1 {
+    color: #800020; /* Editorial Burgundy */
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+    letter-spacing: -0.5px;
+}
+
+/* Subheadings */
+h2 {
+    color: #292929;
+    font-size: 1.5rem;
+    margin-top: 40px;
+    border-bottom: 1px solid #e5e0d8;
+    padding-bottom: 10px;
+}
+
+/* Responsive Image Styling */
+.headshot {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 25px;
+    display: block;
+}
+
+/* Introduction Paragraph */
+.bio {
+    font-size: 1.15rem;
+    color: #333333;
+    margin-bottom: 30px;
+}
+
+/* Ordered List Customization */
+.story-list {
+    padding-left: 20px;
+}
+
+.story-list li {
+    font-size: 1.1rem;
+    font-weight: 600; /* Makes the "Headline / Publication" part bold */
+    margin-bottom: 25px;
+    color: #292929;
+}
+
+/* Hyperlink Styling */
+.story-list a {
+    color: #800020; /* Burgundy links */
+    text-decoration: none;
+}
+
+.story-list a:hover {
+    text-decoration: underline;
+}
+
+/* Story Explanation Text */
+.explanation {
+    font-size: 0.95rem;
+    font-weight: normal; /* Keeps explanations unbolded */
+    color: #555555;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
