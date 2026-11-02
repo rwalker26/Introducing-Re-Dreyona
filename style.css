@@ -1,82 +1,106 @@
-/* Color Palette & Font Setup */
+/* ==========================================================================
+   1. Core Layout & Aesthetic Setup (Art n' Soul Theme)
+   ========================================================================== */
 body {
     background-color: #fbf9f4; /* Warm Substack Beige */
-    color: #292929; /* Off-black for editorial readability */
+    color: #292929; /* Deep charcoal for sharp editorial reading */
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
 }
 
-/* Layout Container */
+/* Restricts the width of the page so it looks like a clean magazine article */
 .container {
     max-width: 650px;
     margin: 50px auto;
     padding: 20px;
+    box-sizing: border-box;
 }
 
-/* Main Burgundy Headline */
+/* ==========================================================================
+   2. Typography & Headings
+   ========================================================================== */
+/* Main Editorial Title */
 h1 {
-    color: #800020; /* Editorial Burgundy */
-    font-size: 2.5rem;
+    color: #800020; /* Deep Burgundy Accent */
+    font-size: 2.6rem;
     font-weight: 700;
-    margin-bottom: 25px;
+    margin-top: 0;
+    margin-bottom: 30px;
     letter-spacing: -0.5px;
+    line-height: 1.2;
 }
 
-/* Subheadings */
-h2 {
+/* Centered Reading Section Header */
+.centered-heading {
+    text-align: center;
     color: #292929;
-    font-size: 1.5rem;
-    margin-top: 40px;
-    border-bottom: 1px solid #e5e0d8;
-    padding-bottom: 10px;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #e5e0d8; /* Editorial divider line */
 }
 
-/* Responsive Image Styling */
-.headshot {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    border-radius: 4px;
-    margin-bottom: 25px;
-    display: block;
-}
-
-/* Introduction Paragraph */
+/* Professional Biography Text */
 .bio {
     font-size: 1.15rem;
     color: #333333;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
-/* Ordered List Customization */
+/* ==========================================================================
+   3. Centered Image Handling (Guaranteed Block Center)
+   ========================================================================== */
+.headshot {
+    display: block;        /* Overrides browser inline default to allow centering */
+    max-width: 320px;      /* Restricts total size on large screens */
+    width: 100%;           /* Allows responsiveness on smaller smartphone mobile widths */
+    height: auto;
+    margin-left: auto;     /* Pushes equal spacing on left side */
+    margin-right: auto;    /* Pushes equal spacing on right side */
+    margin-bottom: 35px;
+    border-radius: 4px;    /* Subtle soft corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Soft dimensional depth shadow */
+}
+
+/* ==========================================================================
+   4. Structured Custom Reading List
+   ========================================================================== */
 .story-list {
-    padding-left: 20px;
+    margin: 0;
+    padding-left: 24px; /* Leaves clear space for the automatic list numbers */
 }
 
 .story-list li {
     font-size: 1.1rem;
-    font-weight: 600; /* Makes the "Headline / Publication" part bold */
-    margin-bottom: 25px;
+    font-weight: 600; /* Keeps "Headline / Publication Name" clean and bold */
     color: #292929;
+    margin-bottom: 35px;
 }
 
-/* Hyperlink Styling */
+/* Hyperlinks within List Elements */
 .story-list a {
-    color: #800020; /* Burgundy links */
+    color: #800020; /* Matching Burgundy for the publication text */
     text-decoration: none;
+    border-bottom: 1px solid rgba(128, 0, 32, 0.15); /* Elegant subtle underline link style */
+    transition: color 0.2s ease, border-color 0.2s ease;
 }
 
 .story-list a:hover {
-    text-decoration: underline;
+    color: #b01a3d; /* Lighter crimson on mouse hover interaction */
+    border-bottom-color: #b01a3d;
 }
 
-/* Story Explanation Text */
+/* Multi-sentence Brief Story Descriptions */
 .explanation {
-    font-size: 0.95rem;
-    font-weight: normal; /* Keeps explanations unbolded */
-    color: #555555;
-    margin-top: 5px;
+    font-size: 0.98rem;
+    font-weight: 400; /* Strips structural bold properties from parents, keeping text clean */
+    color: #555555;   /* Soft slate gray for visual hierarchy */
+    margin-top: 8px;
     margin-bottom: 0;
+    line-height: 1.5;
 }
+
